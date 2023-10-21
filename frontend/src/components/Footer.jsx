@@ -23,7 +23,7 @@ const Footer = () => {
         <p><AiFillTwitterCircle/></p>
       </div>
     </div>
-    <p className='py-2 pb-2 text-center text-white bg-black'>Footer</p>
+    <p className='py-2 pb-2 text-center text-white bg-black'>Created with MongoDB - Express.JS - React - Node</p>
     </>
   )
 }
