@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <div className='px-8 px-[200px]'>
+    <div className='px-8 md:px-[200px] min-h-[80vh]'>
       <HomePosts />
       <HomePosts />
       <HomePosts />
