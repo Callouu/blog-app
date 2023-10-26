@@ -52,12 +52,18 @@ const PostDetails = () => {
                             <div className='flex justify-center items-center space-x-4'>
                                 <p className='text-gray-500 text-sm'>date</p>
                                 <p className='text-gray-500 text-sm'>heure</p>
-                                <p className='text-gray-600'><PiNotePencilBold /></p>
-                                <p className='text-gray-600'><BsFillTrashFill /></p>
+                                <div className='flex items-center justify-center space-x-2'>
+                                    <p className='text-gray-600'><PiNotePencilBold /></p>
+                                    <p className='text-gray-600'><BsFillTrashFill /></p>
+                                </div>
                             </div>
                         </div>
                         <p className='pt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
+                </div>
+                <div className='w-full flex flex-col mt-4 md:flex-row'>
+                    <input type='text' placeholder='Write your comment..' className='  md:w-[80%] outline-none px-4 mt-4 md:mt-0'></input>
+                    <button className='bg-black text-white px-4 py-2 md:w-[20%] rounded-lg mt-4 md:mt-0'>POST COMMENT</button>
                 </div>
             </div>
             <Footer />
