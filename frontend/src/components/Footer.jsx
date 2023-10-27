@@ -24,7 +24,7 @@ const Footer = () => {
         <p><AiFillLinkedin/></p>
         <p><AiFillTwitterCircle/></p>
       </div>
-    <p className='py-2 pb-2 text-center text-white bg-black'>Created with MongoDB - Express.JS - React - Node - TailwindCSS</p>
+    <p className='py-2 pb-2 text-center text-white bg-black'>Created with MongoDB - Express.JS - React - Node - Tailwindcss</p>
     </>
   )
 }
