@@ -1,31 +1,32 @@
 import React, { useState } from 'react'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import { ImCross } from 'react-icons/im'
 
-const CreatePost = () => {
+const EditPost = () => {
 
-  const [cat, setCat] = useState ("")
-  const [cats, setCats] = useState ([])
+    const [cat, setCat] = useState ("")
+    const [cats, setCats] = useState ([])
+    
+    const addCategory = () => {
+      let updatedCats = [...cats]
+      updatedCats.push(cat)
+      setCat("")
+      setCats(updatedCats)
+    }
   
-  const addCategory = () => {
-    let updatedCats = [...cats]
-    updatedCats.push(cat)
-    setCat("")
-    setCats(updatedCats)
-  }
+    const deleteCategory = (i) => {
+      let updatedCats = [...cats]
+      updatedCats.splice(i)
+      setCats(updatedCats)
+    }
 
-  const deleteCategory = (i) => {
-    let updatedCats = [...cats]
-    updatedCats.splice(i)
-    setCats(updatedCats)
-  }
 
   return (
     <div>
       <Navbar />
       <div className='px-6 md:px-[200px] mt-8'>
-        <h1 className='font-bold text-xl md:text-2xl'>Create a post</h1>
+        <h1 className='font-bold text-xl md:text-2xl'>Update a post</h1>
         <form className='w-full flex flex-col space-y-4 md:space-y-8 mt-4'>
           <input type='text' placeholder='Enter post title' className='px-4 py-2 outline-none'></input>
           <input type='file' placeholder='' className='px-4'></input>
@@ -45,7 +46,7 @@ const CreatePost = () => {
             </div>
           </div>
           <textarea rows={15} cols={30} className='px-4 py-2 outline-none' placeholder='Write your description..'></textarea>
-          <button className='bg-black w-full md:w-[20%] mx-auto font-semibold text-white px-4 py-2 md:text-xl text-lg uppercase'>Create</button>
+          <button className='bg-black w-full md:w-[20%] mx-auto font-semibold text-white px-4 py-2 md:text-xl text-lg uppercase'>Update</button>
         </form>
       </div>
       <Footer />
@@ -53,4 +54,4 @@ const CreatePost = () => {
   )
 }
 
-export default CreatePost
+export default EditPost
