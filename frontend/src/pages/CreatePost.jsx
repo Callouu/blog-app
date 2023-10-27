@@ -26,8 +26,8 @@ const CreatePost = () => {
       <Navbar />
       <div className='px-6 md:px-[200px] mt-8'>
         <h1 className='font-bold text-xl md:text-2xl'>Create a post</h1>
-        <form className='w-full flex flex-col space-y-4 md:space-y-8 mt-4'>
-          <input type='text' placeholder='Enter post title' className='px-4 py-2 outline-none'></input>
+        <form className='w-full flex flex-col space-y-4 md:space-y-8 mt-4 '>
+          <input type='text' placeholder='Enter post title' className='w-[50%] px-4 py-2 outline-none border-solid border-2 border-gray-200 rounded-md'></input>
           <input type='file' placeholder='' className='px-4'></input>
           <div className='flex flex-col'>
             <div className='flex items-center space-x-4 md:space-x-8'>
@@ -44,7 +44,7 @@ const CreatePost = () => {
               ))}
             </div>
           </div>
-          <textarea rows={15} cols={30} className='px-4 py-2 outline-none' placeholder='Write your description..'></textarea>
+          <textarea rows={15} cols={30} className='px-4 py-2 outline-none border-solid border-2 border-gray-200 rounded-md' placeholder='Write your description..'></textarea>
           <button className='bg-black w-full md:w-[20%] mx-auto font-semibold text-white px-4 py-2 md:text-xl text-lg uppercase'>Create</button>
         </form>
       </div>
