@@ -36,7 +36,7 @@ const CreatePost = () => {
             </div>
             {/* categories */}
             <div className='flex px-4 mt-3'>
-              {cats?.map((c,i) => (
+              {cats?.map((c, i) => (
                 <div key={i} className='flex justify-center items-center space-x-2 mr-4 bg-gray-200 px-2 py-1 rounded-md'>
                   <p>{c}</p>
                   <p onClick={deleteCategory} className='cursor-pointer hover:text-red-500'><ImCross /></p>
